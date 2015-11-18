@@ -14,10 +14,10 @@
 [Link to Project]
 
 ## Background and Motivation:
-Obesity is a major issue, more than 34% of US Adults are obese and it is dangerous as it causes severe diseases such as heart stroke, diabetes and various types of cancer. Through this project we want to highlight the programs and factors that effect obesity. which would help the government to plan and assign budgets to deal with this problem. This project will help the government to analyse their programs and help in decision making for budget allocation.
+Obesity is a major issue, more than 34% of US Adults are obese and it is dangerous as it causes severe diseases such as heart stroke, diabetes and various types of cancer. Through this project we want to highlight the some of the key factors that are known to cause obesity, how obesity has affected the population and details about obesity programs available for the states - which would help the government in planning programs to fight obesity and allocate budgets to these programs
 
 ## Project Objectives
-The objective of our project is to understand and explore which states are mostly affected by obesity and what are the factors such as socio-economic status, income and physical activity etc  contributing to obesity. We want to explore the factors effecting obesity using visualizations and showing some statistics of the distribution of obesity accross different states and people's access to different facilities such as grocery stores etc. 
+The objective of our project is to understand and explore which states are mostly affected by obesity and what are the factors such as socio-economic status, income and physical activity etc  contributing to obesity. We want to explore the factors affecting obesity using visualizations and showing some statistics of the distribution of obesity across different states and people's access to different facilities such as grocery stores etc. The primary objective of the project is to build visualizations that will finally help government to understand the states and demography most prone to obesity, how successful have the past programs been and to help in decision making process for budget allocation.
 
 ## Data
 Description of the data set (dimensions, names of variables with their description):
@@ -54,6 +54,11 @@ There should be a map showing different states of US as a starting point of the 
 ## Optional Features
 Drilling down by other fields such as prices & taxes etc.
 
+## Project Schedule
+Nov 18 - Nov 24:	Data processing (cleaning and consolidation) 
+Nov 24 - Dec 1:	Work on visualizations	
+Dec 1 - Dec 8:		Work on visualizations (ctnd.)
+Dec 8 - Dec 15:	Prepare process book, project website, project screen-cast.
 
 
 
