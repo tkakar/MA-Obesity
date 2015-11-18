@@ -1,12 +1,10 @@
-Basic Info. The project title, your names, e-mail addresses, GitHub ids, a link to the project repository (I encourage you to make it a public repo).
-
 ##Basic Info
 * Project Title: 
+    Factors Effecting US Obesity
+
 * Team
   Tabassum Kakar (email: tkakar@wpi.edu)   (git ID: tkakar)
-
   Suwodi Dutta Bordoloi (email :sdbordoloi@wpi.edu>)  (git ID : suwDB)
-  
   Chitra Pichaimuttu Kanickaraj (email:cpichaimuttukani@wpi.edu)  (git ID:chitrakaraj)
   
 * Link
