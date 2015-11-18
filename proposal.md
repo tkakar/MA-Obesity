@@ -38,6 +38,7 @@ We have data in seperate files for year 2011, 2012 and 2014, so first we need to
 
 ## Visualization Design.
 Visualization Design. How will you display your data? Provide some general ideas that you have for the visualization design. Develop three alternative prototype designs for your visualization. Create one final design that incorporates the best of your three designs. Describe your designs and justify your choices of visual encodings. We recommend you use the 
+![Sketch_map](img/Fig1.jpg.jpeg?raw=true)
 ![Five Design Sheet Methodology](img/image-18-11-15-10-49-1.jpeg?raw=true)
 ![Sketch2](img/image-18-11-15-10-49.jpeg?raw=true)
 ![Sketch3](img/image-18-11-15-10-49-2.jpeg?raw=true)
