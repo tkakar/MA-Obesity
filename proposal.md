@@ -38,8 +38,9 @@ We have data in seperate files for year 2011, 2012 and 2014, so first we need to
 
 ## Visualization Design.
 Visualization Design. How will you display your data? Provide some general ideas that you have for the visualization design. Develop three alternative prototype designs for your visualization. Create one final design that incorporates the best of your three designs. Describe your designs and justify your choices of visual encodings. We recommend you use the 
-![Five Design Sheet Methodology](img/image-18-11-15-10-49-1.jpeg?raw=true).
-
+![Five Design Sheet Methodology](img/image-18-11-15-10-49-1.jpeg?raw=true)
+(img/image-18-11-15-10-49.jpeg?raw=true)
+(img/image-18-11-15-10-49-2.jpeg?raw=true)
 
 ## Must-Have Features. List the features without which you would consider your project to be a failure.
 There should be a map showing different states of US as a starting point of the visualization and then drilling down further to explore the data based on different variables such as Counties inside the states, socio-economic status etc 
