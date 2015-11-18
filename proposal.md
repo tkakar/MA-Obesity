@@ -7,18 +7,16 @@
 
   Suwodi Dutta Bordoloi (email :sdbordoloi@wpi.edu>)  (git ID : suwDB)
   
-  Chitra Pichaimuttu Kanickaraj (email:cpichaimuttukani@wpi.edu)  (git ID:chitrakaraj)
+  Chitra Pichaimuttu Kanickaraj (email:cpichaimuttukani@wpi.edu)  (git ID:chitrakraj)
   
 * Link
 ![Link to Project]
 
 ## Background and Motivation:
-Obesity is a major issue, more than 34% of US Adults are obese and it is dangerous as it causes severe diseases such as heart stroke, diabetes and various types of cancer. Through this project we want to help governement to have a detailed view of the demographics and habits of obese people, so that governemnt can come up with some solution to deal with this problem.
+Obesity is a major issue, more than 34% of US Adults are obese and it is dangerous as it causes severe diseases such as heart stroke, diabetes and various types of cancer. Through this project we want to highlight the programs and factors that effect obesity. which would help the government to plan and assign budgets to deal with this problem. This project will help the government to analyse their programs and help in decision making for budget allocation.
 
 ## Project Objectives
-The objective of our project is to understand and explore which states are mostly affected by obesity and what are the factors such as socio-economic status, income and physical activity etc are affecting obesity. We want to explore the factors effecing  obesity using simple visualizations. This project will help us combining our knowledge  
-The benefits include solving a problem using visualization and telling a story.
-
+The objective of our project is to understand and explore which states are mostly affected by obesity and what are the factors such as socio-economic status, income and physical activity etc  contributing to obesity. We want to explore the factors effecting obesity using visualizations and showing some statistics of the distribution of obesity accross different states and people's access to different facilities such as grocery stores etc. 
 
 ## Data
 Description of the data set (dimensions, names of variables with their description):
