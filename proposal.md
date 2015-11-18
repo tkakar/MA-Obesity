@@ -37,11 +37,15 @@ The dataset for this study has been chosen from the United States Department of 
 ## Data Processing.
 We have data in seperate files for year 2011, 2012 and 2014, so first we need to merge the dataset and deal with the missing values either by removing or by filling them with mean/median. There are some data inconsistencies and some repeated use of same records each year which needs to be removed. 
 
-## Visualization Design.
-Visualization Design. How will you display your data? Provide some general ideas that you have for the visualization design. Develop three alternative prototype designs for your visualization. Create one final design that incorporates the best of your three designs. Describe your designs and justify your choices of visual encodings. We recommend you use the 
+## Visualization Design
+At first we will have an interactive map of US (Fig 1) where we will show how much is obesity widespread in general across all states by color or other parameter. 
 ![Sketch_map](img/Fig1.jpg.jpeg?raw=true)
-![Five Design Sheet Methodology](img/image-18-11-15-10-49-1.jpeg?raw=true)
+By clicking on a state, we can drill down to further details in Fig 2 and Fig 3. 
+![Sketch 1](img/image-18-11-15-10-49-1.jpeg?raw=true)
+Figure 2 shows the demography by age - seniors, adults and children in that state. By choosing an age group we can see the clustered bar chart (Fig 3), how much are the grocery stores accessible to the specific age group and how much help they get from food assistance program.
+Figure - 4, shows the amount of funding in various programs per state.
 ![Sketch2](img/image-18-11-15-10-49.jpeg?raw=true)
+
 ![Sketch3](img/image-18-11-15-10-49-2.jpeg?raw=true)
 
 ## Must-Have Features. List the features without which you would consider your project to be a failure.
