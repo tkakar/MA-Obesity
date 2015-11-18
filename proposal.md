@@ -1,6 +1,6 @@
 ##Basic Info
 * Project Title: 
-    Factors Effecting US Obesity
+    An overview of Factors Effecting US Obesity
 
 * Team
   Tabassum Kakar (email: tkakar@wpi.edu)   (git ID: tkakar)
