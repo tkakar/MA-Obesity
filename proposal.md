@@ -4,7 +4,9 @@
 
 * Team
   Tabassum Kakar (email: tkakar@wpi.edu)   (git ID: tkakar)
+
   Suwodi Dutta Bordoloi (email :sdbordoloi@wpi.edu>)  (git ID : suwDB)
+  
   Chitra Pichaimuttu Kanickaraj (email:cpichaimuttukani@wpi.edu)  (git ID:chitrakaraj)
   
 * Link
@@ -35,7 +37,7 @@ The dataset for this study has been chosen from the United States Department of 
 
 ## Data Processing.
 We have data in seperate files for year 2011, 2012 and 2014, so first we need to merge the dataset and deal with the missing values either by removing or by filling them with mean/median. There are some data inconsistencies and some repeated use of same records each year which needs to be removed. 
-- 
+
 ## Visualization Design.
 Visualization Design. How will you display your data? Provide some general ideas that you have for the visualization design. Develop three alternative prototype designs for your visualization. Create one final design that incorporates the best of your three designs. Describe your designs and justify your choices of visual encodings. We recommend you use the [Five Design Sheet Methodology](http://fds.design/).
 
