@@ -10,7 +10,7 @@ Basic Info. The project title, your names, e-mail addresses, GitHub ids, a link 
   Chitra Pichaimuttu Kanickaraj (email:cpichaimuttukani@wpi.edu)  (git ID:chitrakaraj)
   
 * Link
-* ![Link to Project]()
+![Link to Project]
 
 ## Background and Motivation:
 Obesity is a major issue, more than 34% of US Adults are obese and it is dangerous as it causes severe diseases such as heart stroke, diabetes and various types of cancer. Through this project we want to help governement to have a detailed view of the demographics and habits of obese people, so that governemnt can come up with some solution to deal with this problem.
