@@ -45,7 +45,7 @@ By clicking on a state, we can drill down to further details in Fig 2 and Fig 3.
 Figure 2 shows the demography by age - seniors, adults and children in that state. By choosing an age group we can see the clustered bar chart (Fig 3), how much are the grocery stores accessible to the specific age group and how much help they get from food assistance program.
 Figure - 4, shows the amount of funding in various programs per state.
 ![Sketch2](img/image-18-11-15-10-49.jpeg?raw=true)
-
+Figure -5 shows a Tree, that can expand on demand i.e. if a user wants see further detail, then the tree will expand.
 ![Sketch3](img/image-18-11-15-10-49-2.jpeg?raw=true)
 
 ## Must-Have Features. List the features without which you would consider your project to be a failure.
