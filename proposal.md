@@ -10,7 +10,7 @@
   Chitra Pichaimuttu Kanickaraj (email:cpichaimuttukani@wpi.edu)  (git ID:chitrakraj)
   
 * Link
-![Link to Project]
+[Link to Project]
 
 ## Background and Motivation:
 Obesity is a major issue, more than 34% of US Adults are obese and it is dangerous as it causes severe diseases such as heart stroke, diabetes and various types of cancer. Through this project we want to highlight the programs and factors that effect obesity. which would help the government to plan and assign budgets to deal with this problem. This project will help the government to analyse their programs and help in decision making for budget allocation.
