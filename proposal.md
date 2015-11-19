@@ -56,8 +56,11 @@ Drilling down by other fields such as prices & taxes etc.
 
 ## Project Schedule
 Nov 18 - Nov 24:	Data processing (cleaning and consolidation) 
+
 Nov 24 - Dec 1:	Work on visualizations	
+
 Dec 1 - Dec 8:		Work on visualizations (ctnd.)
+
 Dec 8 - Dec 15:	Prepare process book, project website, project screen-cast.
 
 
