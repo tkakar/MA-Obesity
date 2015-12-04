@@ -1,59 +1,12 @@
-var width = 600;
-var height = 600;
-var color  = d3.scale.category20(); 
-var size  = 550;
-var gap = 5;
-var margin = {top: 50, bottom: 70, left: 50, right: 50};
+// var width = 600;
+// var height = 600;
+// var color  = d3.scale.category20(); 
+// var size  = 550;
+// var gap = 5;
+// var margin = {top: 50, bottom: 70, left: 50, right: 50};
 var Avg_Age = 17.81;
-var Avg_Race = 16.18 ;
+// var Avg_Race = 16.18 ;
 
-getMap();
-
-function getMap(){
-
-  var width = 1000,
-   height = 800;
-   
-var rateById = d3.map();
-
-var quantize = d3.scale.quantize()
-    .domain([10, 25])
-    .range(d3.range(9).map(function(i) { return "q" + i + "-9"; }));
-  
-var projection = d3.geo.mercator()
-    .center([-71.60, 41.77]) //.center([-70.00, 42.68])
-    .scale(15000)
-    .translate([width / 2, height / 2]);
-
-var path = d3.geo.path()
-    .projection(projection);  //projection
-   
-var svg = d3.select("#map_chart").append("svg")
-    .attr("width", width)
-    .attr("height", height);
-  
-queue()
-    .defer(d3.json, "scripts/ma-counties.json")
-    .defer(d3.csv, "data/health.csv", function(d) { rateById.set(d.id, +d.rate); })
-    .await(ready);
-  
-function ready(error, ma) {
-  if (error) throw error;
-  
-  console.log(rateById);
-  
-  svg.append("g")
-      .attr("class", "counties")
-    .selectAll("path")
-      .data(ma.features)
-    .enter().append("path")
-      .attr("class", function(d) { return quantize(rateById.get(d.properties.id)); })
-      .attr("d", path);
-  
-}
-
-d3.select(self.frameElement).style("height", height + "px");
-}
 
 gBarChartForPrograms();
 
@@ -82,10 +35,10 @@ var yAxis = d3.svg.axis()
     .orient("left")
     .tickFormat(d3.format(".2s"));
 
-var svg = d3.select("#group_bar").append("svg")
+var svg = d3.select("body").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
-  .append("g")
+    .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 d3.csv("data/data2014_foodPrograms_LeastObese.csv", function(error, data) {
@@ -95,6 +48,7 @@ d3.csv("data/data2014_foodPrograms_LeastObese.csv", function(error, data) {
 
   data.forEach(function(d) {
     d.ages = ageNames.map(function(name) { return {name: name, value: +d[name]}; });
+    // console.log(d.ages)
   });
 
   x0.domain(data.map(function(d) { return d.County; }));
@@ -151,34 +105,132 @@ d3.csv("data/data2014_foodPrograms_LeastObese.csv", function(error, data) {
       .text(function(d) { return d; });
 
 }); // end of data load.
+
 } 
 
+var margin = {top: 20, right: 20, bottom: 30, left: 40},
+width = 960 - margin.left - margin.right,
+height = 500 - margin.top - margin.bottom;
+
+// var x0 = d3.scale.ordinal()
+//     .rangeRoundBands([0, width], .1);
+
+var x1 = d3.scale.ordinal();
+
+var y = d3.scale.linear()
+    .range([height, 0]);
+
+var color = d3.scale.ordinal()
+    .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+
+var xAxis = d3.svg.axis()
+    .scale(x1)
+    .orient("bottom");
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left")
+    .tickFormat(d3.format(".2s"));
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 /////////////////   For Race 
-d3.csv("data/Race.csv", function(error,d){
+d3.csv("data/race.csv", function(error,data){
 
-      d.map(function(data){ 
-           data['County'] = [+data['White'], +data.Black, +data.Asian, +data.Hisp,  +data.American_Indian, +data['Hawaiian/Pacific Islander']];
-            race_barChart(data.County)
+var ageNames = d3.keys(data[0]).filter(function(key) { return key !== "County"; });
+
+    ageNames.map(function(name){ 
+            return {name:name, value:+data[name]};
+            race_barChart(data, ageNames);
             // console.log(data['County']);
       });
 
+      // d.map(function(data){ 
+      //      data['County'] = [+data['White'], +data.Black, +data.Asian, +data.Hisp,  +data.American_Indian, +data['Hawaiian/Pacific Islander']];
+      //       race_barChart(data.County)
+      //       // console.log(data['County']);
+      // });
+
+console.log(ageNames, data)
+
+  // data.forEach(function(d) {
+  //   d.ages = ageNames.map(function(name) { return {name: name, value: +d[name]}; });
+  //   race_barChart(data, ageNames)
+  // });
 
 });
 
-function race_barChart(data){
 
-      race = ["White", "Black", "Asian", "Hisp",  "AmericanIndian", "Hawaiian"];
-        
+function race_barChart(data, ageNames){
+  console.log(data, ageNames)
+    // x0.domain(data.map(function(d) { return d.County; }));
+    x1.domain(ageNames).rangeRoundBands([0, x0.rangeBand()]);
+    y.domain([0, d3.max(data, function(d) { return d3.max(d.ages, function(d) { return d.value; }); })]);
 
-      var x = d3.scale.ordinal().rangeRoundBands([0,width-margin.left],0.01);
-      var y = d3.scale.linear().range([height-margin.top-margin.bottom, 0]);
+    svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
 
-      x.domain(race)
-       // x.domain(race.map(function(d,i) { console.log(d.i); return d.i; }));
-      y.domain([0,d3.max(data)]);
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+    .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("dy", ".71em")
+      .style("text-anchor", "end")
+      .text("Percent");
 
-      var xAxis = d3.svg.axis()
+  // var state = svg.selectAll(".state")
+  //     .data(data)
+  //   .enter().append("g")
+  //     .attr("class", "g")
+  //     .attr("transform", function(d) { return "translate(" + x0(d.County) + ",0)"; });
+
+  state.selectAll("rect")
+      .data(function(d) { return d.ages; })
+    .enter().append("rect")
+      .attr("width", x1.rangeBand())
+      .attr("x", function(d) { return x1(d.name); })
+      .attr("y", function(d) { return y(d.value); })
+      .attr("height", function(d) { return height - y(d.value); })
+      .style("fill", function(d) { return color(d.name); });
+
+  var legend = svg.selectAll(".legend")
+      .data(ageNames.slice().reverse())
+    .enter().append("g")
+      .attr("class", "legend")
+      .attr("transform", function(d, i) { return "translate(0," + i * 30 + ")"; });
+
+  legend.append("rect")
+      .attr("x", width - 18)
+      .attr("width", 18)
+      .attr("height", 18)
+      .style("fill", color);
+
+  legend.append("text")
+      .attr("x", width - 24)
+      .attr("y", 9)
+      .attr("dy", ".35em")
+      .style("text-anchor", "end")
+      .text(function(d) { return d; });
+
+
+  }
+      
+      // var x = d3.scale.ordinal().rangeRoundBands([0,width-margin.left],0.01);
+      // var y = d3.scale.linear().range([height-margin.top-margin.bottom, 0]);
+
+      // x.domain(race)
+      //  // x.domain(race.map(function(d,i) { console.log(d.i); return d.i; }));
+      // y.domain([0,d3.max(data)]);
+
+     /* var xAxis = d3.svg.axis()
                     .scale(x)
                     .orient("bottom");
 
@@ -261,8 +313,9 @@ function race_barChart(data){
               .attr("transform", "rotate(-90)")
               .append("text").attr("x", -(height-margin.left-margin.right)/2)
               .attr("y",-40).attr("text-anchor", "middle")
-              .text("Percentage Obesity"); 
- }
+              .text("Percentage Obesity"); */
+// });
+
 /////////////////// Age Bar Chart ////////////////
 
 d3.csv("data/age.csv", function(error,d){
