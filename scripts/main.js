@@ -7,6 +7,53 @@ var margin = {top: 50, bottom: 70, left: 50, right: 50};
 var Avg_Age = 17.81;
 var Avg_Race = 16.18 ;
 
+getMap();
+
+function getMap(){
+
+  var width = 1000,
+   height = 800;
+   
+var rateById = d3.map();
+
+var quantize = d3.scale.quantize()
+    .domain([10, 25])
+    .range(d3.range(9).map(function(i) { return "q" + i + "-9"; }));
+  
+var projection = d3.geo.mercator()
+    .center([-71.60, 41.77]) //.center([-70.00, 42.68])
+    .scale(15000)
+    .translate([width / 2, height / 2]);
+
+var path = d3.geo.path()
+    .projection(projection);  //projection
+   
+var svg = d3.select("#map_chart").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+  
+queue()
+    .defer(d3.json, "scripts/ma-counties.json")
+    .defer(d3.csv, "data/health.csv", function(d) { rateById.set(d.id, +d.rate); })
+    .await(ready);
+  
+function ready(error, ma) {
+  if (error) throw error;
+  
+  console.log(rateById);
+  
+  svg.append("g")
+      .attr("class", "counties")
+    .selectAll("path")
+      .data(ma.features)
+    .enter().append("path")
+      .attr("class", function(d) { return quantize(rateById.get(d.properties.id)); })
+      .attr("d", path);
+  
+}
+
+d3.select(self.frameElement).style("height", height + "px");
+}
 
 gBarChartForPrograms();
 
@@ -35,7 +82,7 @@ var yAxis = d3.svg.axis()
     .orient("left")
     .tickFormat(d3.format(".2s"));
 
-var svg = d3.select("body").append("svg")
+var svg = d3.select("#group_bar").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
   .append("g")

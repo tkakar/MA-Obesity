@@ -52,5 +52,20 @@ path {
     fill: none;
 }
 
+.counties {
+  stroke: black;
+  stroke-width: 2px;
+  fill: none;
+}
+
+.q0-9 { fill:#fff7ec; }
+.q1-9 { fill:#fee8c8; }
+.q2-9 { fill:#fdd49e; }
+.q3-9 { fill:#fdbb84; }
+.q4-9 { fill:#fc8d59; }
+.q5-9 { fill:#ef6548; }
+.q6-9 { fill:#d7301f;}
+.q7-9 { fill:#b30000; }
+.q8-9 { fill:#7f0000; }
 
 
