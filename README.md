@@ -7,8 +7,11 @@ Final Project - Interactive Data Visualization
 # Team
 
   Tabassum Kakar (email: tkakar@wpi.edu)   (git ID: tkakar)
+  
   Suwodi Dutta Bordoloi (email :sdbordoloi@wpi.edu>)  (git ID : suwDB)
+  
   Chitra Pichaimuttu Kanickaraj (email:cpichaimuttukani@wpi.edu)  (git ID:chitrakraj)
+  
   
 # Link
 [Project Link] (http://tkakar.github.io/DataVisFinal/index.html)
