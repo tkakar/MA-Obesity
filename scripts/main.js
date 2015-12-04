@@ -108,7 +108,7 @@ d3.csv("data/data2014_foodPrograms_LeastObese.csv", function(error, data) {
 
 
 /////////////////   For Race 
-d3.csv("data/race.csv", function(error,d){
+d3.csv("data/Race.csv", function(error,d){
 
       d.map(function(data){ 
            data['County'] = [+data['White'], +data.Black, +data.Asian, +data.Hisp,  +data.American_Indian, +data['Hawaiian/Pacific Islander']];
