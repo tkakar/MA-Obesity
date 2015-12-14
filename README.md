@@ -5,12 +5,9 @@ Final Project - Interactive Data Visualization
     An overview of Factors Effecting Massachusetts Obesity
 
 # Team
-
-  Tabassum Kakar (email: tkakar@wpi.edu)   (git ID: tkakar)
-  
-  Suwodi Dutta Bordoloi (email :sdbordoloi@wpi.edu>)  (git ID : suwDB)
-  
-  Chitra Pichaimuttu Kanickaraj (email:cpichaimuttukani@wpi.edu)  (git ID:chitrakraj)
+  * Tabassum Kakar (email: tkakar@wpi.edu)   (git ID: tkakar)
+  * Suwodi Dutta Bordoloi (email :sdbordoloi@wpi.edu>)  (git ID : suwDB)
+  * Chitra Pichaimuttu Kanickaraj (email:cpichaimuttukani@wpi.edu)  (git ID:chitrakraj)
   
   
 # Link to Website
