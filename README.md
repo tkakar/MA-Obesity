@@ -24,6 +24,8 @@ Through this project we want to highlight the state of obesity in Massachusetts,
 The files consists of data that includes all the data used in the project, scripts that have the javascript used. The libraries folder contains the available code we have used such as ma-counties.json for counties map. 
 
 # Features of the project
+* The county map does not only show the obesity intensty, but also shows the change in obesity percentage upon hovering. 
 * By selecting any county on the map all the charts are updated automatically for that county. 
 * We have provided a drop-down menu with each chart too, so that user can check the county anywhere they want without scrolling up to the map. 
 * For users' convenient exploration we have provided another drop-down menu with each graph that gives a comparison of the selected county with the state's average, with the most obese county (Nantucket) and less obese county (Hamshire).
+* The hover over functionality is implemented for each chart for the sake of understanding the data.
