@@ -21,7 +21,7 @@ README - The README file must give an overview of what you are handing in: which
 Through this project we want to highlight the state of obesity in Massachusetts, socio-economic data of the state, some of the key obesity related factors and data of federal programs. Our goal is to help obesity policy and program decision makers in planning and allocating federal budgets to various federal aid programs.
 
 # Overview of files
-The files consists of data that includes all the data used in the project, scripts that have the javascript used. The libraries folder contains the available code we have used such as ma-counties.json for counties map. 
+The files consists of data that includes all the data files used in the project, scripts contains the main javascript code. The libraries folder contains the available code we used such as ma-counties.json for counties map. The folder styles contains all the CSS used in the project.
 
 # Features of the project
 * The county map does not only show the obesity intensty, but also shows the change in obesity percentage upon hovering. 
