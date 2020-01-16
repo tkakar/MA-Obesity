@@ -1,4 +1,4 @@
-
+=======
 ## Final Project - Interactive Data Visualization  
 
 
@@ -35,4 +35,4 @@ Chitrakraj: Created map and integration
 SuwDB: Created grouped bar charts and interaction among charts
 Tkakar: Created the socioeconomic charts and layout.
 All of us worked on writing the process book, website layout and screen cast.
-=======
+
