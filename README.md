@@ -11,7 +11,7 @@
 # Link to Website
 [Project Link] (http://tkakar.github.io/DataVisFinal/index.html)
 # Link to Screen Cast
-[Screen Cast Link] (http://tkakar.github.io/DataVisFinal/index.html)
+[Screen Cast Link] (https://www.youtube.com/watch?v=O5CU03_WZOI)
 
 
 # Goal of project
