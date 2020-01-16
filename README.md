@@ -2,8 +2,8 @@
 # Final Project - Interactive Data Visualization # 
 
 
-# Project Title: 
-    ## An overview of Factors Effecting Massachusetts Obesity ##
+# Project Title: An overview of Factors Effecting Massachusetts Obesity #
+    ##  ##
 
 # Team
   * Tabassum Kakar (email: tkakar@wpi.edu)   (git ID: tkakar)
