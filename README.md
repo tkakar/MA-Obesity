@@ -1,8 +1,6 @@
 
-# Final Project - Interactive Data Visualization # 
-
-
 #  An overview of Factors Effecting Massachusetts Obesity #
+## Final Project: Interactive Visualization ##
 
 # Team
   * Tabassum Kakar (email: tkakar@wpi.edu)   (git ID: tkakar)
@@ -33,5 +31,6 @@ The files consists of data that includes all the data files used in the project,
 * Chitrakraj: Created map and integration
 * SuwDB: Created grouped bar charts and interaction among charts
 * Tkakar: Created the socioeconomic charts and layout.
+
 All of us worked on writing the process book, website layout and screen cast.
 
