@@ -1,5 +1,5 @@
-=======
-## Final Project - Interactive Data Visualization  
+
+### Final Project - Interactive Data Visualization  
 
 
 # Project Title: 
@@ -33,6 +33,8 @@ The files consists of data that includes all the data files used in the project,
 # Contribution:
 Chitrakraj: Created map and integration
 SuwDB: Created grouped bar charts and interaction among charts
+
 Tkakar: Created the socioeconomic charts and layout.
+
 All of us worked on writing the process book, website layout and screen cast.
 
