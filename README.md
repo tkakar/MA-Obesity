@@ -2,17 +2,12 @@
 #  An overview of Factors Effecting Massachusetts Obesity #
 ## Final Project: Interactive Visualization ##
 
-# Team
-  * Tabassum Kakar (email: tkakar@wpi.edu)   (git ID: tkakar)
-  * Suwodi Dutta Bordoloi (email :sdbordoloi@wpi.edu>)  (git ID : suwDB)
-  * Chitra Pichaimuttu Kanickaraj (email:cpichaimuttukani@wpi.edu)  (git ID:chitrakraj)
-  
-  
+!(obesity.png)
+
 # Link to Website
 [Project Link] (http://tkakar.github.io/DataVisFinal/index.html)
 # Link to Screen Cast
 [Screen Cast Link] (https://www.youtube.com/watch?v=O5CU03_WZOI)
-
 
 # Goal of project
 Through this project we want to highlight the state of obesity in Massachusetts, socio-economic data of the state, some of the key obesity related factors and data of federal programs. Our goal is to help obesity policy and program decision makers in planning and allocating federal budgets to various federal aid programs.
@@ -27,6 +22,11 @@ The files consists of data that includes all the data files used in the project,
 * For users' convenient exploration we have provided another drop-down menu with each graph that gives a comparison of the selected county with the state's average, with the most obese county (Nantucket) and less obese county (Hampshire). This menu is not synchronized i.e. upon changing one charts compare menu, does not effect the others, so that user can explore the trends across each chart individually.
 * The hover over functionality is implemented for each chart for the sake of understanding the data.
 
+# Team
+  * Tabassum Kakar (email: tkakar@wpi.edu)   (git ID: tkakar)
+  * Suwodi Dutta Bordoloi (email :sdbordoloi@wpi.edu>)  (git ID : suwDB)
+  * Chitra Pichaimuttu Kanickaraj (email:cpichaimuttukani@wpi.edu)  (git ID:chitrakraj)
+  
 # Contribution:
 * Chitrakraj: Created map and integration
 * SuwDB: Created grouped bar charts and interaction among charts
