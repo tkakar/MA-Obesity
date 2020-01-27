@@ -2,7 +2,7 @@
 #  An overview of Factors Effecting Massachusetts Obesity #
 ## Final Project: Interactive Visualization ##
 
-!(obesity.png)
+![](obesity.png)
 
 # Link to Website
 [Project Link] (http://tkakar.github.io/DataVisFinal/index.html)
