@@ -1,0 +1,257 @@
+:root {
+    --chipsTags: rgb(219, 216, 216);  
+    --chipsSel: #CA0020;
+    --header: #66c2a5;
+    --sheader:rgb(228, 216, 208);
+    --highlight:rgb(250, 245, 245);
+    /* rgb(250, 238, 229); */
+  }
+
+body {
+    padding: 10%;
+    padding-top: 20px;
+    font-size: 1em;
+    color: #333;
+}
+.aligntop {
+    vertical-align: top;
+    margin-bottom: 15px;
+}
+.underline {
+    text-align: center;
+    text-decoration: underline;
+}
+
+/************** Main Layout *************/
+
+#root_container {
+    text-align: center;
+    display:flex;
+    flex-direction: column
+}
+
+#root_container > div{
+    border: 2px solid lightgrey;
+    margin:5px;
+}
+
+#selections_container{
+    flex: 0 0 25%;
+}
+
+#tags_container{
+    flex: 0 0 75%;
+}
+
+#legend{
+    display:flex;
+    justify-content:center;
+}
+
+#legend span:first-child{
+    margin-right: 20px;
+}
+
+.selection_header{
+    background:var(--header);
+    height: 40px;
+    text-align:left;
+    color:white;
+    padding-left: calc(50% - 30px);
+    overflow:hidden; /* to avoid float children causing 0 height*/
+}
+
+/************** Tags Panel *************/
+.tag_groups{
+    display:flex;
+    text-align: start;
+    flex-direction: row;
+    border-bottom: 1px solid lightgrey;
+}
+.session_tags, .tag_details{
+    flex: 0 0 60%;
+    align-content: flex-start;
+    padding: 3px 5px;
+    min-height: 40px;
+    margin: auto;
+}
+
+.tag_details{
+    flex: 0 0 0%;
+    display:flex;
+}
+
+.tag_header{
+    line-height: 0px;
+    padding-left: 40%;
+}
+
+.tag_details > div > span{
+    padding-left: 15px;
+}
+
+.tags{
+    display:inline-block;
+    border-radius: 10px;
+    padding: 0px 5px;
+    margin:5px 10px 5px 0;
+    background: rgb(230, 196, 196);
+    height: 30px;
+    text-align: center; 
+    overflow: hidden;
+}
+.tags > div:first-child{
+    padding:0 5px;
+    height: 30px;
+    line-height: 0px;
+
+}
+.tags > div:nth-child(2){
+    display:inline-block;
+    height: 30px;
+    line-height: 0px;
+}
+
+.new_tag_ct, .new_sel{
+    display: flex;
+}
+
+.new_tag_ct > input{
+    margin-right:20px;
+}
+
+.new-tag-items{
+    align-items: center;
+    margin-right: 20px;
+}
+
+.labelFont{
+    font-size: 0.9em;
+    color: #333;
+}
+
+.chips{
+    width: 50px;
+    vertical-align: middle;
+    background-color: #bac6e1 ;/* e8d1d7rgb(141, 196, 141); */
+    font-size: 1.15em;
+    float:left;
+    text-align: center;
+    margin-right: 10px;
+} 
+
+.chips > div{
+    margin:auto;
+}
+
+.edit_buttons{
+    height:25px;
+    margin:auto;
+    text-align: center;
+    margin-right: 10px;
+    font-size:x-large;
+    color:rgb(168, 102, 102);
+}
+
+.icon_btn{
+    background: none;
+    color:rgb(168, 102, 102);
+    border: none;
+    /* font-size:x-large; */
+}
+
+.tag_btn{
+    margin-top: 5px;
+}
+
+.tag_chips{
+    width: 50px;
+    height: 20px;
+    font-size: 1em;
+    padding: 5px;
+    line-height: 20px;
+}
+
+  /******* Selection Panel ********/
+.selection_header > button{
+     margin-top: 10px;
+}
+#selections_container > div h3{
+    margin:10px 0 0 0;
+}
+.selsC{
+    padding: 10px 30px;
+}
+.sel_header{
+    background:var(--sheader);
+    padding: 3px 5px;
+    margin-bottom: 5px;
+    height: 30px;
+    line-height: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.sel_header:first-child{
+    padding-left: 5px;
+}
+
+.selections{
+    border: 2px solid white;
+    margin-bottom: 15px;
+    background:rgb(250, 249, 249);
+    border-radius: 10px;
+}
+
+.selections:last-child{
+    margin-bottom:0;
+}
+.sel_Summary, .sel_Summary > div, .legDiv, .legDiv > div{
+    display:inline-block;
+}
+
+.legDiv{
+    margin-right: 20px;
+}
+
+.leg_chips{
+    width: 20px;
+    height:20px;
+}
+
+.sel_Summary > div{
+    line-height: 45px;
+    margin: 10px 10px;
+}
+.sel_chips{
+    border: none;
+    width: 80px;
+}
+.new_sel{
+    margin: 5px;
+    justify-content: center;
+}
+
+/*  General  */
+
+.highlight{
+    background: var(--highlight);
+}
+
+.floatLeft{
+    float:left;
+}
+
+.floatRight{
+    float: right;
+}
+
+.floatRight:before, .floatLeft:before{
+    content: " "; 
+    display: table; 
+}
+
+.floatRight:after, .floatLeft:after, .tags:after , h3{ 
+    clear: both;
+}
+
