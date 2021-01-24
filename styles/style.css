@@ -1,0 +1,71 @@
+.underline {
+    text-align: center;
+    text-decoration: underline;
+}
+
+body {
+  font: 10px sans-serif;
+
+    padding: 10%;
+    padding-top: 0;
+}
+
+
+.root-container {
+    text-align: center;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: sans-serif;
+    font-size: 11px;
+}
+
+.tick line {
+    opacity: 0.15; 
+    shape-rendering: crispEdges;
+    z: 0;
+}
+
+
+.header-font {
+/* Embed this font from Google Fonts at
+https://www.google.com/fonts/specimen/Monda */ 
+    background-color: #fff;
+    /*color: #444;*/
+    font-family: cursive;
+    font-feature-settings: "'liga' 1";
+    font-kerning: auto;
+    line-height: 1.5em;
+}
+
+
+path { 
+    stroke: steelblue;
+    stroke-width: 2;
+    fill: none;
+}
+
+.counties {
+  stroke: black;
+  stroke-width: 2px;
+  fill: none;
+}
+
+.q0-9 { fill:#fff7ec; }
+.q1-9 { fill:#fee8c8; }
+.q2-9 { fill:#fdd49e; }
+.q3-9 { fill:#fdbb84; }
+.q4-9 { fill:#fc8d59; }
+.q5-9 { fill:#ef6548; }
+.q6-9 { fill:#d7301f;}
+.q7-9 { fill:#b30000; }
+.q8-9 { fill:#7f0000; }
+
+
