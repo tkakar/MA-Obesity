@@ -170,16 +170,6 @@ key.append("g")
 	.style("text-anchor", "end").text("% Obesity rate");
 //end key
 
-
-
-
-
-
-
-
-
-
-
 // Constants
 var AVERAGE = "Average"
 var MOST_OBESE = "Most obese"
@@ -248,7 +238,7 @@ var y = d3.scale.linear()
 
 var color = d3.scale.ordinal()
     //.range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
-    .range(["#e31a1c", "#feb24c", "#fd8d3c", "#ffeda0", "#fc4e2a", "#bd0026", "#fed976", "#800026"]); 
+    .range(["#e31a1c", "#feb24c", "#fd8d3c", "#ffeda0", "#fc4e2a", "#bd0026", "#fed976", "#800026"]);
 
 var xAxis = d3.svg.axis()
     .scale(x0)
@@ -1423,7 +1413,8 @@ dispatch.on("updateGraphIncome.incomepie", function(selectedCountyData, selected
           .enter().append("g")
           .attr("class", "arc")
           .on("mouseover", function (d) {
-                d3.select(this).attr("stroke", "blue").attr("stroke-width", 0.8);
+                // d3.select(this).attr("stroke-width", 0.8);
+                // d3.select(this).attr("stroke", "blue").attr("stroke-width", 0.8);
                         // console.log(d)
                 d3.select("#tab_tooltip")
                     .style("left", d3.event.pageX  + "px")
@@ -1437,7 +1428,12 @@ dispatch.on("updateGraphIncome.incomepie", function(selectedCountyData, selected
                 // Hide the tooltip
                     d3.select("#tab_tooltip")
                         .style("opacity", 0);
-                    d3.select(this).attr("stroke", "black").attr("stroke-width", 0.2);
+                    // d3.select(this).attr("stroke-width", 0.2)
+                    // d3.select(this).attr("stroke", function(d){
+                    //     console.log(d3.select(this)[0][0].childNodes[1].attr("class"))//.attr("class"))
+                    //     if(d3.select(this).classed==="whiteLabel") return  'rgb(250, 248, 248)'
+
+                    // });;
             });
 
         
@@ -1500,7 +1496,8 @@ dispatch.on("updateGraphIncome.incomepie", function(selectedCountyData, selected
           .enter().append("g")
           .attr("class", "arc")
           .on("mouseover", function (d) {
-                d3.select(this).attr("stroke", "blue").attr("stroke-width", 0.8);
+                d3.select(this)//.attr("stroke", "blue")
+                  .attr("stroke-width", 0.8);
                         // console.log(d)
                 d3.select("#tab_tooltip")
                     .style("left", d3.event.pageX  + "px")
@@ -1514,7 +1511,6 @@ dispatch.on("updateGraphIncome.incomepie", function(selectedCountyData, selected
                 // Hide the tooltip
                     d3.select("#tab_tooltip")
                         .style("opacity", 0);
-                    d3.select(this).attr("stroke", "black").attr("stroke-width", 0.2);
             });
 
       state_g.append("path")
@@ -1530,13 +1526,10 @@ dispatch.on("updateGraphIncome.incomepie", function(selectedCountyData, selected
             return d.data.value + "%"; })
           .style("font-size", "14px")
           .attr("class", function(d){
-            // console.log(d3.select(this.parentNode.childNodes[0]).style("fill") in ["rgb(227, 26, 28)", "rgb(252, 78, 42)", "rgb(189, 0, 38)", "rgb(128, 0, 38)"], d3.select(this.parentNode.childNodes[0]).style("fill"))
-            // console.log("rgb(227, 26, 28)" in ["rgb(227, 26, 28)", "rgb(252, 78, 42)", "rgb(189, 0, 38)", "rgb(128, 0, 38)"], d3.select(this.parentNode.childNodes[0]).style("fill"))
             if (["rgb(227, 26, 28)", "rgb(252, 78, 42)", "rgb(189, 0, 38)", "rgb(128, 0, 38)"].includes(d3.select(this.parentNode.childNodes[0]).style("fill")))
                 return "whiteLabel"
            });
 })
-
 
 
 

@@ -4,10 +4,9 @@
 
 ![](obesity.png)
 
-# Link to Website
-[Project Link] (http://tkakar.github.io/DataVisFinal/index.html)
-# Link to Screen Cast
-[Screen Cast Link] (https://www.youtube.com/watch?v=O5CU03_WZOI)
+# [Live!](http://tkakar.github.io/MA-ObesityAnalysis/)
+<!-- # Link to Screen Cast
+[Video](https://www.youtube.com/watch?v=O5CU03_WZOI) -->
 
 # Goal of project
 Through this project we want to highlight the state of obesity in Massachusetts, socio-economic data of the state, some of the key obesity related factors and data of federal programs. Our goal is to help obesity policy and program decision makers in planning and allocating federal budgets to various federal aid programs.
