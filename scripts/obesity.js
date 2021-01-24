@@ -248,7 +248,7 @@ var y = d3.scale.linear()
 
 var color = d3.scale.ordinal()
     //.range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
-    .range(["#e31a1c", "#feb24c", "#fd8d3c", "#ffeda0", "#fc4e2a", "#bd0026", "#fed976", "#800026"]);
+    .range(["#e31a1c", "#feb24c", "#fd8d3c", "#ffeda0", "#fc4e2a", "#bd0026", "#fed976", "#800026"]); 
 
 var xAxis = d3.svg.axis()
     .scale(x0)
@@ -441,7 +441,7 @@ dispatch.on("updateGraphProgram.bar",
         bottom: 30,
         left: 40
 		},
-		width = 700 - margin.left - margin.right,
+		width = 850 - margin.left - margin.right,
 		height = 400 - margin.top - margin.bottom;
 
 		var x0 = d3.scale.ordinal()
@@ -700,7 +700,7 @@ dispatch.on("updateGraphFactor.bar",
         bottom: 30,
         left: 40
 			},
-			width = 700 - margin.left - margin.right,
+			width = 850  - margin.left - margin.right,
 			height = 400 - margin.top - margin.bottom;
 
 		var x0 = d3.scale.ordinal()
@@ -1452,7 +1452,15 @@ dispatch.on("updateGraphIncome.incomepie", function(selectedCountyData, selected
           .attr("dy", ".55em")
           .text(function(d) { //console.log(d,d.data.name) ;
                 return d.data.value + "%"; })
-          .style("font-size", "14px");
+          .style("font-size", "14px")
+          .attr("class", function(d){
+                // console.log(d.data)
+                // if (d.data.name !=='Poverty_rate') 
+                // console.log(d3.select(this.parentNode).style("color"))
+
+          if (["rgb(227, 26, 28)", "rgb(252, 78, 42)", "rgb(189, 0, 38)", "rgb(128, 0, 38)"].includes(d3.select(this.parentNode.childNodes[0]).style("fill")))
+                return "whiteLabel"
+          });
 		  
 		//legend
         var legend = svg.selectAll(".legend")
@@ -1460,7 +1468,7 @@ dispatch.on("updateGraphIncome.incomepie", function(selectedCountyData, selected
             .enter().append("g")
             .attr("class", "legend")
             .attr("transform", function(d, i) {
-                return "translate(20," + i * 20 + ")";
+                return "translate(25," + i * 20 + ")";
             });
 
         legend.append("rect")
@@ -1520,10 +1528,15 @@ dispatch.on("updateGraphIncome.incomepie", function(selectedCountyData, selected
           .attr("dy", ".55em")
           .text(function(d) { //console.log(d,d.data.value) ;
             return d.data.value + "%"; })
-          .style("font-size", "14px");
-         
-         
+          .style("font-size", "14px")
+          .attr("class", function(d){
+            // console.log(d3.select(this.parentNode.childNodes[0]).style("fill") in ["rgb(227, 26, 28)", "rgb(252, 78, 42)", "rgb(189, 0, 38)", "rgb(128, 0, 38)"], d3.select(this.parentNode.childNodes[0]).style("fill"))
+            // console.log("rgb(227, 26, 28)" in ["rgb(227, 26, 28)", "rgb(252, 78, 42)", "rgb(189, 0, 38)", "rgb(128, 0, 38)"], d3.select(this.parentNode.childNodes[0]).style("fill"))
+            if (["rgb(227, 26, 28)", "rgb(252, 78, 42)", "rgb(189, 0, 38)", "rgb(128, 0, 38)"].includes(d3.select(this.parentNode.childNodes[0]).style("fill")))
+                return "whiteLabel"
+           });
 })
+
 
 
 

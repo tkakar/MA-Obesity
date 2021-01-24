@@ -44,7 +44,8 @@ body {
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
-    width: 750px;
+    width: 900px;
+    /* text-align-last: center; */
 }
 
 .text-center {
@@ -150,11 +151,12 @@ p {
     margin: 0 0 9px;
 }
 
-@media (max-width: 991px)
+/* @media (max-width: 991px), */
+
 .fixed-container {
     text-align: center;
 }
-@media (max-width: 991px)
+
 .fixed-container .fixed-left {
     display: inline-block;
     position: relative;
@@ -170,11 +172,11 @@ p {
     position: relative;
     z-index: 1;
     width: auto;
-    //max-width: 800px;
+    /* max-width: 800px; */
     vertical-align: top;
     text-align: center;
     overflow-y: auto;
-    //max-height: 100%;
+    /* max-height: 100%; */
 }
 
 
@@ -205,7 +207,8 @@ div.tooltip {
     border-radius: 10px;
     -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
     -mox-box-shadow: 4px 4px 4px 10px rgba(0, 0, 0, 0.4);
-    box-shadow: 4px 4px 10px rbga(0, 0, 0, 0.4) pointer-events: none;
+    box-shadow: 4px 4px 10px rbga(0, 0, 0, 0.4);
+    pointer-events: none;
     position: absolute;
     z-index: +1;
 }
@@ -342,7 +345,8 @@ path{
     border-radius: 10px;
     -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
     -mox-box-shadow: 4px 4px 4px 10px rgba(0, 0, 0, 0.4);
-    box-shadow: 4px 4px 10px rbga(0, 0, 0, 0.4) pointer-events: none;
+    box-shadow: 4px 4px 10px rbga(0, 0, 0, 0.4);
+    pointer-events: none;
 }
 #tab_tooltip.hidden {
     opacity: 0;
@@ -357,4 +361,13 @@ path{
 #video{
     padding:20;
     text-align: center;
+}
+
+.alignCenter{
+    display: table;
+    margin: 0 auto;
+}
+
+.whiteLabel{
+    stroke: rgb(250, 248, 248);
 }
